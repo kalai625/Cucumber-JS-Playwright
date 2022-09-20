@@ -38,6 +38,7 @@ After(async function (scenario) {
   else
   {
     const ref = await global.page.screenshot({ path: `screenshotsFailed/${scenario.pickle.name}.png`, fullPage: true });
+    console.log('test failed  scenarios  /'+`${scenario.pickle.name}` )  
   }
 })
 // After(async function (scenario) {

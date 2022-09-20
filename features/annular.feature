@@ -2,9 +2,9 @@ Feature: Send Message in Annular message
 
     As a user to test the annular web application
 
-    Scenario: Login with valid credentials
-      Given I visit a login page
-      When Error
+    Scenario: Test LeafText message
+      Given User navigate testleaf homepage          
+      When  Enter text message
       When Pause 
       
      

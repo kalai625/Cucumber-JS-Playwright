@@ -1,4 +1,35 @@
+const { parseGherkinMessageStream } = require("@cucumber/cucumber");
+
+
 class LoginPage {
+  
+  async testleafUrl() {    
+    await page.goto('https://www.leafground.com/dashboard.xhtml');
+    
+ }
+ 
+ async fillEmailadress(){
+  await page.locator('[placeholder="E-mail Address"]').fill('kalai@annular.com');
+ }
+
+ async textmessageTeamAnnular(){
+  await page.locator('textarea[role="textbox"]').fill('Team Annular'); 
+ }
+
+ async msgClicksumbit(){
+  await page.locator('button[role="button"]:has-text("Send")').click();
+ }
+
+ async pause() {
+  // Wait for 3 seconds
+  await page.waitForTimeout(3000)
+}
+ 
+ 
+
+
+
+//******************* */
   async navigateToLoginScreen() {
      await page.goto('https://www.google.com/');
      //await page.locator('[aria-label="Search"]').click()
@@ -29,10 +60,7 @@ class LoginPage {
     await page.waitForSelector('.inventory_list')
   }
 
-  async pause() {
-    // Wait for 3 seconds
-    await page.waitForTimeout(3000)
-  }
+
 }
 
 module.exports = { LoginPage }

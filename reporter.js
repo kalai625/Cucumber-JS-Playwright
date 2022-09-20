@@ -1,7 +1,7 @@
-const reporter = require('cucumber-html-reporter')
+let reporter = require('cucumber-html-reporter')
 
 // These options will be used at the time of HTML Report generation
-const options = {
+let  options = {
   theme: 'bootstrap',
   jsonFile: 'cucumber_report.json',
   output: 'reports/cucumber_report.html',

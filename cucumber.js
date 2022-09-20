@@ -3,13 +3,12 @@ const common = `
     --require setup/hooks.js
     --require step-definitions/**/*.step.js
 
-    --require json:cucumber_report.json
-    --require html:reports/**/*.html
     --publish-quiet   
     --format summary
- 
+  
     --require progress-bar
-    --require package.json    
+    --require package.json  
+    --require playwright.config.js  
     
     `
 
