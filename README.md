@@ -2,5 +2,8 @@
 
 before install nodeJs
 
-command    =>    npm install 
-command    =>    npx cucumber.js 
+1>>>>>>    command    =>    npm install 
+
+
+
+2>>>>>>    command    =>    npx cucumber.js 
