@@ -1,9 +1,9 @@
-const playwright = require('playwright')
+  const playwright = require('playwright')
 const { Before, After, BeforeAll, AfterAll, Status } = require('@cucumber/cucumber')
 
 // To launch the browser before all the scenarios
 BeforeAll(async () => {
-  console.log('Launch Browser--001')
+  console.log('Launch Browser--BeforeAll')
   // Giving browser- Chromium and headed mode
   global.browser = await playwright['chromium'].launch({ headless: false })
 
@@ -12,13 +12,13 @@ BeforeAll(async () => {
 
 // To close the browser after all the scenarios
 AfterAll(async () => {
-  console.log('Close Browser--004')
+  console.log('Close Browser--AfterAll')
   await global.browser.close()
 })
 
 // Before every scenario, Create new context and page
 Before(async () => {
-  console.log('Create new context and page--002')
+  console.log('Create new context and page--Before')
   global.context = await global.browser.newContext()
   global.page = await global.context.newPage()
 
@@ -27,7 +27,7 @@ Before(async () => {
 
 // After every scenario, Close context and page
 After(async () => {
-  console.log('Close context and page--003')
+  console.log('Close context and page--After')
   await global.page.close()
   await global.context.close()
 })
