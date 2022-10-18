@@ -6,6 +6,9 @@ class LoginPage {
   async testleafUrl() {    
     await page.goto('https://www.leafground.com/dashboard.xhtml');    
  }
+ async linkinedIn() {    
+  await page.goto('https://www.linkedin.com/');    
+}
  
  async fillEmailadress(){
   await page.locator('[placeholder="E-mail Address"]').fill('kalai@annular.com');
@@ -24,8 +27,9 @@ class LoginPage {
   await page.waitForTimeout(3000)
 }
 async take_screenshot() {
- // const ref = await global.page.screenshot({ path: `TestCaseScreenshot/${scenario.pickle.name}.png`, fullPage: true });
+ // const ref1 = await global.page.screenshot({ path: `reports/vianame/${e.pickle}.png`, fullPage: true });//
  const ref = await global.page.screenshot({ path: `reports/TestScenario.png`, fullPage: true });
+
 }
 
 

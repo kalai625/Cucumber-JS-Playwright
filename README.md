@@ -5,11 +5,11 @@ Install Visual Studio Code and Node-js
 
 before install nodeJs
 
-1>>>>>>    command    =>    npm install 
+1>>>>>>   installation  command    =>    npm install 
 
 
 
-2>>>>>>    command    =>    npx cucumber-js 
+2>>>>>>    run command    =>    npx cucumber-js 
 
 *******************************
 cucumber_report.json has not updating
