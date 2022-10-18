@@ -18,6 +18,11 @@ Then('Pause',async ()=>{
   await loginPage.pause();
 })
 
+Then('Take ScreenShot',async ()=>{
+  await loginPage.take_screenshot();
+  
+})
+
 
 //*************** */
 

@@ -9,6 +9,7 @@ const common = `
     --require progress-bar
     --require package.json  
     --require playwright.config.js  
+    --require reporter.js
     
     `
 

@@ -23,6 +23,11 @@ class LoginPage {
   // Wait for 3 seconds
   await page.waitForTimeout(3000)
 }
+async take_screenshot() {
+ // const ref = await global.page.screenshot({ path: `TestCaseScreenshot/${scenario.pickle.name}.png`, fullPage: true });
+ const ref = await global.page.screenshot({ path: `reports/TestScenario.png`, fullPage: true });
+}
+
 
 //******************* */
   async navigateToLoginScreen() {
