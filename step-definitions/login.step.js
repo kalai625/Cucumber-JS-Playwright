@@ -7,20 +7,24 @@ const loginPage = new LoginPage()
 
 Given('User navigate testleaf homepage', async ()=> {
   await loginPage.testleafUrl(); 
+  console.log('Test Run')
 }); 
 
 When('Enter text message',async ()=>{
   await loginPage.fillEmailadress();
   await loginPage.textmessageTeamAnnular();
   await loginPage.msgClicksumbit();
+  console.log('Test Run')
 })
 
 Then('Pause',async ()=>{
   await loginPage.pause();
+  console.log('Test Run')
 })
 
 Then('Take ScreenShot',async ()=>{
   await loginPage.take_screenshot();
+  console.log('Test Run')
   
 })
 

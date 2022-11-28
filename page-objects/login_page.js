@@ -5,6 +5,8 @@ class LoginPage {
   
   async testleafUrl() {    
     await page.goto('https://www.leafground.com/dashboard.xhtml');    
+   //return await page.goto(global.BASE_URL);   
+ 
  }
  async linkinedIn() {    
   await page.goto('https://www.linkedin.com/');    
